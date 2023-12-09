@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "bf092256-0917-45dd-aa61-7da09a3dac20",
+		"name": "green_garden",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31685385"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/product",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name_product",
+							"value": "Bambu Hoki",
+							"type": "text"
+						},
+						{
+							"key": "desc_product",
+							"value": "Tanaman Hias",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "Rp.100000",
+							"type": "text"
+						},
+						{
+							"key": "stock",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "id_seller",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "id_category",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "img_product",
+							"type": "file",
+							"src": "/d:/Documents/Semester 3/teknologi web/image toko tanaman hias/bambu-hoki.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/product/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"product",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/product Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|cnmCa4lqf7k8n79MBswZK2F0puLCJNYYJzwwLKN5",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "satya.sudharsan@student.undiksha.ac.id",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "satya18Juni2004",
+							"type": "text"
+						},
+						{
+							"key": "device_name",
+							"value": "mobile",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/product",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
